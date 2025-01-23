@@ -8,4 +8,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  reporter: 'mochawesome', // Configuración del reportador
+  reporterOptions: {
+    reportDir: 'cypress/reports', // Carpeta donde se guardarán los reportes
+    overwrite: false, // No sobrescribir reportes existentes
+    html: true, // Generar reportes HTML
+    json: true // Generar reportes JSON
+  }
 });
+
