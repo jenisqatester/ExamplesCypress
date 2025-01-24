@@ -2,10 +2,13 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://jsonplaceholder.typicode.com/guide/', // Configuración correcta
-    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}', // Configuración correcta
+    baseUrl: 'https://jsonplaceholder.typicode.com/guide/', // URL base para la aplicación
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}', // Patrón de ubicación de los casos de prueba
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // Implementa listeners de eventos aquí
+    },
+    env: {
+      apiBaseUrl: 'https://jsonplaceholder.typicode.com/posts/1' // URL de la API
     },
   },
   reporter: 'mochawesome', // Configuración del reportador
