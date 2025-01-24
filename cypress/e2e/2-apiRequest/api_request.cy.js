@@ -1,4 +1,5 @@
 describe('Pruebas de API con Cypress', () => {
+  
   it('Extrae datos de un JSON y verifica un valor concreto del JSON', () => {
     // Obtén la URL de la API desde el archivo de configuración
     const apiUrl = Cypress.env('apiBaseUrl');
