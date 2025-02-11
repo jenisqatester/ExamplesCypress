@@ -8,7 +8,8 @@ module.exports = defineConfig({
       // Implementa listeners de eventos aquí
     },
     env: {
-      apiBaseUrl: 'https://jsonplaceholder.typicode.com/posts/1' // URL de la API
+      apiBaseUrl: 'https://jsonplaceholder.typicode.com/posts/1', // URL de la API
+      googleUrl: 'https://google.es' // Nueva URL agregada
     },
   },
   reporter: 'mochawesome', // Configuración del reportador
